@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>範例</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.2.min.js"></script>
+ <script>
+$(document).ready(function(){
+    $("#p1").click(function(){
+	$("p:first").hide();
+	});
+
+    $("#p2").click(function(){
+	$("#second").hide();
+	});
+
+	 $("#p3").click(function(){
+	$(".third").hide();
+	});
+});
+  </script>
+</head>
+<body>
+ <div  style="height: 125px;">
+	<div style="height: 25px;">
+	<p>Hide Paragraph 1</p>
+	</div>
+	<div style="height: 25px;">
+	<p id = "second">Hide Paragraph 2</p>
+	</div>
+	<div style="height: 25px;">
+	<p class = "third">Hide Paragraph 3</p>
+	</div>
+ </div>
+
+
+<button id = "p1">Hide p1</button>
+<button id = "p2">Hide p2</button>
+<button id = "p3">Hide p3</button>
+ </div>
+</body>
+</html>
