@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>範例</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.2.min.js"></script>
+ <script>
+$(document).ready(function(){
+    $("#doge").click(function(){
+	$("#doge").slideUp();
+	$("#doge").slideDown();
+	});
+
+     $("#doge").mouseenter(function(){
+	$("#doge").attr("src", "http://i3.kym-cdn.com/photos/images/newsfeed/000/674/934/422.jpg");
+	
+	});
+	
+	$("#doge").mouseleave(function(){
+	$("#doge").attr("src", "http://vignette1.wikia.nocookie.net/sanicsource/images/9/97/Doge.jpg/revision/latest?cb=20160112233015");
+	});
+	
+	
+	$( "#doge" ).dblclick(function() {
+  $( "#doge" ).animate({
+    width: [ "toggle", "swing" ],
+    height: [ "toggle", "swing" ],
+    opacity: "toggle"
+  }, 5000, "linear", function() {
+    $( this ).after( $( "#word" ).hide(),"<div>Bye bye.</div>" );
+  });
+});
+	
+});
+  </script>
+</head>
+<body>
+ <img src="http://vignette1.wikia.nocookie.net/sanicsource/images/9/97/Doge.jpg/revision/latest?cb=20160112233015" style="width:500px;height:300px;" id="doge">
+<p id = "word"><br>click the doge <br> You can also double click to see what doge will do</p>
+
+</body>
+</html>
